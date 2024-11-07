@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to custom menu CSS -->
+  <script src="menu.js" defer></script> <!-- Link to custom JavaScript for sliders -->
+</head>
+<body id="body">
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <h1>The Cozy Cup</h1>
+  </header>
+
+  <nav id="sidebar">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section class="menu-section">
+      <h2>Drinks</h2>
+      <div class="card-slider">
+        <button class="slide-btn left" onclick="scrollLeft()">&#10094;</button>
+        <div class="card-container">
+          <!-- Drink Items -->
+          <div class="card">
+            <img src="images/espresso.jpg" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>With milk</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/cappuccino.jpg" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>2% milk, wet</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/latte.jpg" alt="Latte">
+            <h3>Latte</h3>
+            <p>With bakery</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/choc_malt.jpg" alt="choc_malt">
+            <h3>Choc Malt</h3>
+            <p>Shakes</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/strawberry_marshallow.jpg" alt="strawberry_marshallow">
+            <h3>Strawberry Marshallow</h3>
+            <p>Shakes</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/vanilla_special.jpg" alt="vanilla_special">
+            <h3>Vanilla Special</h3>
+            <p>Shakes</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/banana_oat_smoothie.jpg" alt="banana_oat_smoothie">
+            <h3>Banana Oat Smoothie</h3>
+            <p>Smoothie</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/pineapple_ginger_smoothie.jpg" alt="pineapple_ginger_smoothie">
+            <h3>Pineapple Ginger Smoothie</h3>
+            <p>Smoothie</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/peanut_butter_berry_smoothie.jpg" alt="peanut_butter_berry_smoothie">
+            <h3>Peanut Butter Berry Smoothie</h3>
+            <p>Smoothie</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <!-- Add more drink cards -->
+        </div>
+        <button class="slide-btn right" onclick="scrollRight()">&#10095;</button>
+      </div>
+    </section>
+  
+    <section class="menu-section">
+      <h2>Burgers</h2>
+      <div class="card-slider">
+        <button class="slide-btn left" onclick="scrollLeft1()">&#10094;</button>
+        <div class="card-container1">
+          <!-- Fast Food Items -->
+          <div class="card">
+            <img src="images/chicken_burger.jpg" alt="Chicken Burger">
+            <h3>Chicken Burger</h3>
+            <p>Fast Food</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/hamburger.jpg" alt="hamburger">
+            <h3>Hamburger</h3>
+            <p>Fast Food</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/shawarma.jpg" alt="shawarma">
+            <h3>Shawarma</h3>
+            <p>Fast Food</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <!-- Add more fast food cards -->
+        </div>
+        <button class="slide-btn right" onclick="scrollRight1()">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Pasta</h2>
+      <div class="card-slider">
+        <button class="slide-btn left" onclick="scrollLeft3()">&#10094;</button>
+        <div class="card-container3">
+          <div class="card">
+            <img src="images/macaroni.jpg" alt="macaroni">
+            <h3>Macaroni Pasta</h3>
+            <p>Fast Food</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/bucatini.jpg" alt="bucatini">
+            <h3>Bucatini Pasta</h3>
+            <p>Fast Food</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/spaghetti.jpg" alt="spaghetti">
+            <h3>Spaghetti</h3>
+            <p>Fast Food</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+        </div>
+        <button class="slide-btn right" onclick="scrollRight3()">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Fast Food</h2>
+      <div class="card-slider">
+        <button class="slide-btn left" onclick="scrollLeft4()">&#10094;</button>
+        <div class="card-container4">
+          <div class="card">
+            <img src="images/chicken_sandwich.jpg" alt="chicken_sandwich">
+            <h3>Chicken Sandwich</h3>
+            <p>Fast Food</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/egg_sandwich.jpg" alt="egg_sandwich">
+            <h3>Egg Sandwich</h3>
+            <p>Fast Food</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/grilled_cheese.jpg" alt="grilled_cheese">
+            <h3>Grilled Cheese</h3>
+            <p>Fast Food</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/french_fries.jpg" alt="french_fries">
+            <h3>French Fries</h3>
+            <p>Fast Food</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+        </div>
+        <button class="slide-btn right" onclick="scrollRight4()">&#10095;</button>
+      </div>
+    </section>
+  
+    <section class="menu-section">
+      <h2>Desserts</h2>
+      <div class="card-slider">
+        <button class="slide-btn left" onclick="scrollLeft2()">&#10094;</button>
+        <div class="card-container2">
+          <!-- Dessert Items -->
+          <div class="card">
+            <img src="images/kulfi.jpg" alt="Kulfi">
+            <h3>Kulfi</h3>
+            <p>Ice Cream</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/gelato.jpg" alt="gelato">
+            <h3>Gelato</h3>
+            <p>Ice Cream</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/frozen_yogurt.jpg" alt="frozen_yogurt">
+            <h3>Frozen Yogurt</h3>
+            <p>Ice Cream</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/black_forest_cake.jpg" alt="black_forest_cake">
+            <h3>Black Forest</h3>
+            <p>With bakery</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/chocolate_cake.jpg" alt="chocolate_cake">
+            <h3>Chocolate Cake</h3>
+            <p>With bakery</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/red_velvet_cake.jpg" alt="red_velvet_cake">
+            <h3>Red Velvet Cake</h3>
+            <p>With bakery</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/eclair.jpg" alt="eclair">
+            <h3>Eclair</h3>
+            <p>With bakery</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/croissant.jpg" alt="croissant">
+            <h3>Croissant</h3>
+            <p>With bakery</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+          <div class="card">
+            <img src="images/puff.jpg" alt="puff">
+            <h3>Puff</h3>
+            <p>With bakery</p>
+            <button><a href="order_confirmation.html">+</a></button>
+          </div>
+        </div>
+          <!-- Add more dessert cards -->
+        <button class="slide-btn right" onclick="scrollRight2()">&#10095;</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
